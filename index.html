@@ -1,8 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting notes for an Imaginary Meeting">
+    <title>Imaginary Product Meeting Notes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
+
+    <!-- header -->
+    <header>
+      <h1>Imaginary Product Meeting Discussion</h1>
+      <h2>Brainstorming</h2>
+      <h3>Date: April 32, 2026</h3>
+      <nav>
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#old-business">Old Business</a> |
+        <a href="#new-business">New Business</a> |
+        <a href="#misc">Misc</a> |
+        <a href="#diagrams">Diagrams</a> |
+        <a href="#recordings">Recordings</a> |
+        <a href="#feedback-form">Feedback Form</a>
+      </nav>
+      <hr>
+    </header>
+
+    <!-- main content -->
+    <main>
+
+      <!-- Attendance -->
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <ul>
+          <li><strong>A B</strong> - Project Lead</li>
+          <li><strong>B C</strong> - Frontend Dev</li>
+          <li><strong>C D</strong> - Backend Dev</li>
+          <li><strong>D E</strong> - Designer</li>
+          <li><strong>E F</strong> - QA</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- Agenda -->
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review project goals</li>
+          <li>Discuss UI layout</li>
+          <li>Decide on tech stack</li>
+          <li>Assign initial tasks</li>
+          <li>Set next meeting date</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <!-- Unfinished / Old Business -->
+      <section id="old-business">
+        <h2>Unfinished Business from Last Meeting</h2>
+        <p>No previous meeting — this is the <em>first</em> brainstorm session.</p>
+        <p><i>Note: future meetings will track carryover items here.</i></p>
+      </section>
+
+      <hr>
+
+      <!-- New Business -->
+      <section id="new-business">
+        <h2>New Business</h2>
+        <p>The team discussed several <b>key decisions</b> for the Imaginary Product project:</p>
+        <ul>
+          <li>Project timeline should default to <strong>36 months</strong> with configurable short and long breaks</li>
+          <li>The UI should be <em>minimal and distraction-free</em></li>
+          <li>We will use <b>vanilla RISC-VII Assembly</b> like the good 'ol days</li>
+          <li>Accessibility is a <strong>top priority</strong> from day one</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- Miscellaneous Comments / Questions / Concerns -->
+      <section id="misc">
+        <h2>Miscellaneous Comments / Questions / Concerns</h2>
+        <details>
+          <summary>Delta's concern about sounds</summary>
+          <p>Delta raised a concern about how the speed of sound affects trajectory.<br>
+          The team agreed to research the <span>Web Audio API</span> as a potential solution.</p>
+        </details>
+        <details>
+          <summary>Epsilon's question about color themes</summary>
+          <p>Epsilon asked whether we should support dark mode from the beginning.<br>
+          Decision was deferred to the next meeting.</p>
+        </details>
+        <details>
+          <summary>Omega's suggestion for testing</summary>
+          <p>Omega suggested we set up <div>end-to-end tests</div> early in the project lifecycle.</p>
+        </details>
+      </section>
+
+      <hr>
+
+      <!-- Diagrams / Whiteboard Photos -->
+      <section id="diagrams">
+        <h2>Diagrams &amp; Whiteboard Photos</h2>
+        <p>Photos of whiteboard diagrams drawn during the meeting:</p>
+        <img src="additional/architecture.png" alt="System architecture diagram drawn on whiteboard">
+        <br>
+        <img src="additional/ui-sketch.png" alt="UI layout sketch drawn on whiteboard">
+      </section>
+
+      <hr>
+
+      <!-- Audio and Video Recordings -->
+      <section id="recordings">
+        <h2>Meeting Recordings</h2>
+
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="additional/meeting-audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Recording</h3>
+        <video controls width="640">
+          <source src="additional/meeting-video.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <hr>
+
+      <!-- Feedback Form -->
+      <section id="feedback-form">
+        <h2>Meeting Feedback Form</h2>
+        <form>
+          <fieldset>
+            <legend>Your Information</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+            <label for="meeting-date">Meeting Date:</label><br>
+            <input type="date" id="meeting-date" name="meeting-date"><br><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Feedback</legend>
+
+            <label for="rating">How useful was this meeting?</label><br>
+            <input type="radio" id="very-useful" name="rating" value="very-useful">
+            <label for="very-useful">Very Useful</label><br>
+            <input type="radio" id="somewhat-useful" name="rating" value="somewhat-useful">
+            <label for="somewhat-useful">Somewhat Useful</label><br>
+            <input type="radio" id="not-useful" name="rating" value="not-useful">
+            <label for="not-useful">Not Useful</label><br><br>
+
+            <label>Which topics were relevant to you?</label><br>
+            <input type="checkbox" id="topic-ui" name="topics" value="ui">
+            <label for="topic-ui">UI Design</label><br>
+            <input type="checkbox" id="topic-tech" name="topics" value="tech">
+            <label for="topic-tech">Tech Stack</label><br>
+            <input type="checkbox" id="topic-testing" name="topics" value="testing">
+            <label for="topic-testing">Testing</label><br><br>
+
+            <label for="role-select">Your Role:</label><br>
+            <select id="role-select" name="role">
+              <option value="">--Select a role--</option>
+              <option value="dev">Developer</option>
+              <option value="design">Designer</option>
+              <option value="qa">QA</option>
+              <option value="pm">Project Manager</option>
+            </select><br><br>
+
+            <label for="team-member">Assign follow-up to:</label><br>
+            <input type="text" id="team-member" name="team-member" list="team-list" placeholder="Type a name">
+            <datalist id="team-list">
+              <option value="A B">
+              <option value="B C">
+              <option value="C D">
+              <option value="D E">
+              <option value="E F">
+            </datalist><br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br><br>
+          </fieldset>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <hr>
+      <p><i>Meeting notes recorded by A B</i></p>
+      <p>Next meeting: <b>April 33, 2026</b></p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+
   </body>
 </html>
